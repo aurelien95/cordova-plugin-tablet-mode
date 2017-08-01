@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-	    id="cordova-plugin-tablet-mode" version="0.1">
-  <name>Cordova Plugin Tablet Mode</name>
+	id="cordova-plugin-tablet-mode" version="1.0">
+  <name>Cordova Tablet Mode</name>
   <author>Jeremie Amsellem</author>
   <description>
   </description>
-  <keywords>cordova, tablet, mode</keywords>
+  <keywords>cordova, tablet</keywords>
   <engines>
     <engine name="cordova" version=">=3.0.0" />
   </engines>
   <platform name="android">
-    <config-file target="AndroidManifest.xml" parent="/manifest/">
+    <config-file target="AndroidManifest.xml" parent="/manifest">
       <supports-screens android:smallScreens="false"
                         android:normalScreens="false"
                         android:largeScreens="true"
