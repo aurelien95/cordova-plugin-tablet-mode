@@ -10,6 +10,9 @@
     <engine name="cordova" version=">=3.0.0" />
   </engines>
   <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest" mode="delete">
+      <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+    </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <supports-screens android:smallScreens="false"
                         android:normalScreens="false"
