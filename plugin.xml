@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+	    id="cordova-plugin-launcher" version="0.1">
+  <name>Cordova Plugin Tablet Mode</name>
+  <author>Jeremie Amsellem</author>
+  <description>
+  </description>
+  <keywords>cordova, tablet, mode</keywords>
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <application
+	  android:launchMode="singleTask"
+	  android:clearTaskOnLaunch="true"
+	  android:stateNotNeeded="true">
+      </application>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+      <supports-screens android:smallScreens="false"
+                        android:normalScreens="false"
+                        android:largeScreens="true"
+                        android:xlargeScreens="true"
+                        android:requiresSmallestWidthDp="600" />
+    </config-file>
+</platform>
+</plugin>
