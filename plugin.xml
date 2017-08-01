@@ -10,7 +10,7 @@
     <engine name="cordova" version=">=3.0.0" />
   </engines>
   <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest" mode="overwrite">
+    <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
       <supports-screens android:smallScreens="false"
                         android:normalScreens="false"
                         android:largeScreens="true"
