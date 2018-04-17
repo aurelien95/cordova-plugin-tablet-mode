@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-	id="cordova-plugin-tablet-mode" version="1.0">
-  <name>Cordova Tablet Mode</name>
-  <author>Jeremie Amsellem</author>
-  <description>
-  </description>
-  <keywords>cordova, tablet</keywords>
-  <engines>
-    <engine name="cordova" version=">=3.0.0" />
-  </engines>
-  <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
-        <supports-screens android:smallScreens="false"
-                          android:normalScreens="false"
-                          android:largeScreens="true"
-                          android:xlargeScreens="true"
-                          android:requiresSmallestWidthDp="600" />
-    </edit-config>
-</platform>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-tablet-mode"
+        version="1.1.0">
+    <name>Cordova Tablet Mode</name>
+    <description>
+        Cordova plugin for Android to force tablet usage on the Play Store by adding supports-screens directives in the
+        Manifest.
+    </description>
+    <author>Jeremie Amsellem, Aurélien Gasse</author>
+    <license>MIT</license>
+    <repo>https://github.com/aurelien95/cordova-plugin-tablet-mode</repo>
+    <engines>
+        <engine name="cordova" version=">=3"/>
+        <engine name="cordova-android" version=">=4"/>
+    </engines>
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/supports-screens" mode="overwrite">
+            <supports-screens android:smallScreens="false"
+                              android:normalScreens="false"
+                              android:largeScreens="true"
+                              android:xlargeScreens="true"
+                              android:requiresSmallestWidthDp="600"/>
+        </edit-config>
+    </platform>
 </plugin>

@@ -4,5 +4,5 @@ Cordova plugin for Android to force tablet usage on the Play Store by adding sup
 
 ## Installation
 
-> cordova plugin add https://github.com/lp1bp/cordova-plugin-tablet-mode
+> cordova plugin add https://github.com/aurelien95/cordova-plugin-tablet-mode
     

@@ -1,0 +1,18 @@
+{
+  "name": "cordova-plugin-tablet-mode",
+  "version": "1.1.0",
+  "description": "Cordova plugin for Android to force tablet usage on the Play Store by adding supports-screens directives in the Manifest.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelien95/cordova-plugin-tablet-mode"
+  },
+  "keywords": [
+    "cordova, tablet"
+  ],
+  "author": "Jeremie Amsellem, Aurélien Gasse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aurelien95/cordova-plugin-tablet-mode/issues"
+  },
+  "homepage": "https://github.com/aurelien95/cordova-plugin-tablet-mode#readme"
+}
